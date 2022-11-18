@@ -74,8 +74,8 @@ GEM
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
       tzinfo (~> 2.0)
-    autoprefixer-rails (10.4.7.0)
-      execjs (~> 2)
+    autoprefixer-rails (10.2.5.0)
+      execjs (< 2.8.0)
     bindex (0.8.1)
     bootsnap (1.13.0)
       msgpack (~> 1.2)
@@ -87,9 +87,9 @@ GEM
       reline (>= 0.3.1)
     diff-lcs (1.5.0)
     erubi (1.11.0)
-    execjs (2.8.1)
+    execjs (2.7.0)
     ffi (1.15.5)
-    font-awesome-sass (6.2.1)
+    font-awesome-sass (6.1.2)
       sassc (~> 2.0)
     globalid (1.0.0)
       activesupport (>= 5.0)
@@ -124,7 +124,7 @@ GEM
     nio4r (2.5.8)
     nokogiri (1.13.9-x86_64-linux)
       racc (~> 1.4)
-    pg (1.4.4)
+    pg (1.4.5)
     puma (5.6.5)
       nio4r (~> 2.0)
     racc (1.6.0)
@@ -162,6 +162,7 @@ GEM
       thor (~> 1.0)
       zeitwerk (~> 2.5)
     rake (13.0.6)
+    redis (4.8.0)
     reline (0.3.1)
       io-console (~> 0.5)
     rspec-core (3.12.0)
@@ -221,16 +222,17 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  autoprefixer-rails
+  autoprefixer-rails (= 10.2.5)
   bootsnap
   debug
-  font-awesome-sass (~> 6.1)
+  font-awesome-sass (~> 6.1.1)
   jbuilder
   jsbundling-rails
   pg (~> 1.1)
   puma (~> 5.0)
-  rails (~> 7.0.4)
+  rails (~> 7.0.2, >= 7.0.2.3)
   rails-controller-testing
+  redis (~> 4.0)
   rspec-rails
   sassc-rails
   simple_form!
@@ -244,4 +246,4 @@ RUBY VERSION
    ruby 3.1.2p20
 
 BUNDLED WITH
-   2.3.25
+   2.3.16
